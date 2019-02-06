@@ -41,7 +41,9 @@ Vulnerability #1: CSRF
 
 <img src= "csrf.gif" width="800" >
 
-Vulnerability #2: __________________
+Vulnerability #2: IDOR
+
+<img src="idor.gif" width="800">
 
 
 ## Notes
