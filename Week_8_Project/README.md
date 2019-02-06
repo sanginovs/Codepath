@@ -30,7 +30,9 @@ Vulnerability #1: Username Enumeration
 
 <img src="usernameEnumeration.gif" width = "800">
 
-Vulnerability #2: __________________
+Vulnerability #2: Cross-Site Scripting (XSS)
+
+<img src="xss.gif" width="800" >
 
 
 ## Red
