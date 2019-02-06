@@ -25,7 +25,7 @@ Vulnerability #1: SQL Injection
 
 Vulnerability #2: Session Hijacking
 
-a. I logged in Blue using Safari browser with my "pperson" user credentials. Then, I opened Firefox and navigated to Blue's index page. However, it redirected me to a login page. I copied the session id from Safari Browser and changed Firefox session id to it. Then, I was able to access the home page without logging in while using different browser and session id of the logged in user.
+* I logged in Blue using Safari browser with my "pperson" user credentials. Then, I opened Firefox and navigated to Blue's index page. However, it redirected me to a login page. I copied the session id from Safari Browser and changed Firefox session id to it. Then, I was able to access the home page without logging in while using different browser and session id of the logged in user.
 
 <img src="sessionhijacking.gif" width = "800">
 
@@ -33,13 +33,13 @@ a. I logged in Blue using Safari browser with my "pperson" user credentials. The
 
 Vulnerability #1: Username Enumeration
 
-Green is vulnerable to username enumeration. When a registered user types in their username but the wrong password, it shows an error message in **bold** saying **Log in was unsuccessful**. However, when an unregistered user puts in their wrong username and password, it shows the same error message not in bold: "Log in was unsuccessful." As a result, users who exist in the database are shown **"Log in was unsuccessful"** in bold.
+* Green is vulnerable to username enumeration. When a registered user types in their username but the wrong password, it shows an error message in **bold** saying **Log in was unsuccessful**. However, when an unregistered user puts in their wrong username and password, it shows the same error message not in bold: "Log in was unsuccessful." As a result, users who exist in the database are shown **"Log in was unsuccessful"** in bold.
 
 <img src="usernameEnumeration.gif" width = "800">
 
 Vulnerability #2: Cross-Site Scripting (XSS)
 
-Green is also vulnerable to stored Cross-site scripting attack. There is a "Contact Us" form in the public section of the website. The feedback field in the Contact Us form is vulnerable to stored XSS. I was able to pass in JS code `<script>alert("Hello Sher")</script>`. Once I logged into the website and navigated to Feedback section, the alert box popped up with a message "Hello Sher".
+* Green is also vulnerable to stored Cross-site scripting attack. There is a "Contact Us" form in the public section of the website. The feedback field in the Contact Us form is vulnerable to stored XSS. I was able to pass in JS code `<script>alert("Hello Sher")</script>`. Once I logged into the website and navigated to Feedback section, the alert box popped up with a message "Hello Sher".
 
 <img src="xss.gif" width="800" >
 
@@ -48,7 +48,7 @@ Green is also vulnerable to stored Cross-site scripting attack. There is a "Cont
 
 Vulnerability #1: Cross-Site Request Forgery
 
-Red is vulnerable to Cross-Site Request Forgery (CSRF) because it does not require CSRF token when submitting a form. I inspected the form which lets you edit States in the website. Then, I created the exact clone of the form in my Google Cloud Platform web server that edits Alabama to Alabamaaaaa. Once the logged in user clicks on my link, the form is submitted automatically and the user does not notice anything:
+* Red is vulnerable to Cross-Site Request Forgery (CSRF) because it does not require CSRF token when submitting a form. I inspected the form which lets you edit States in the website. Then, I created the exact clone of the form in my Google Cloud Platform web server that edits Alabama to Alabamaaaaa. Once the logged in user clicks on my link, the form is submitted automatically and the user does not notice anything:
 
 <img src= "csrf.gif" width="800" >
 
