@@ -20,7 +20,7 @@ Vulnerability #1: SQL Injection
 
 <img src = "sqlinjection.gif" width = "800">
 
-Vulnerability #2: __________________
+Vulnerability #2: Session Hijacking
 
 <img src="sessionhijacking.gif" width = "800">
 
