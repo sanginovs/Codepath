@@ -37,7 +37,9 @@ Vulnerability #2: Cross-Site Scripting (XSS)
 
 ## Red
 
-Vulnerability #1: __________________
+Vulnerability #1: CSRF
+
+<img src= "csrf.gif" width="800" >
 
 Vulnerability #2: __________________
 
