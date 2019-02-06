@@ -22,7 +22,7 @@ Vulnerability #1: SQL Injection
 
 Vulnerability #2: __________________
 
-<img src="sessionhijacking,gif" width = "800">
+<img src="sessionhijacking.gif" width = "800">
 
 ## Green
 
