@@ -26,7 +26,9 @@ Vulnerability #2: Session Hijacking
 
 ## Green
 
-Vulnerability #1: __________________
+Vulnerability #1: Username Enumeration
+
+<img src="usernameEnumeration.gif" width = "800">
 
 Vulnerability #2: __________________
 
