@@ -18,7 +18,7 @@ Each version of the site has been given two of the six vulnerabilities. (In othe
 
 Vulnerability #1: SQL Injection
 
-![](https://media.giphy.com/media/pqxW3MVtqWbMhFz519/giphy.gif) 
+<img src = "sqlinjection.gif" width = "800">
 
 Vulnerability #2: __________________
 
