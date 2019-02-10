@@ -21,7 +21,7 @@ Time spent: **X** hours spent in total
 	* View the comments as an admin or a different user and you'll get an alert box. 
 
   - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+    - [Link 1](https://core.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&new=32311%40branches%2F4.2&old=32300%40branches%2F4.2)
 1. (Required) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
