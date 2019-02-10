@@ -22,12 +22,14 @@ Time spent: **X** hours spent in total
 
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&new=32311%40branches%2F4.2&old=32300%40branches%2F4.2)
-1. (Required) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
+
+1. (Required) Vulnerability Name or ID: Server-side Request Forgery (id: 8376)
+  - [ ] Summary: Press This feature in Wordpress allows internal GET Server Side Request Forgery via CSRF because it does not require csrf token for each request since the url does not validate if the user intends to send a scrape request. 
+    - Vulnerability types: CSRF, SSRF
+    - Tested in version: 4.2
+    - Fixed in version: 4.2.7
   - [ ] GIF Walkthrough: 
+<img src="csrf1.gif" width="800">
   - [ ] Steps to recreate: 
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&new=32311%40branches%2F4.2&old=32300%40branches%2F4.2)
