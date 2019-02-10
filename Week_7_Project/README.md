@@ -6,13 +6,20 @@ Time spent: **X** hours spent in total
 
 ## Pentesting Report
 
-1. (Required) Vulnerability Unauthenticated Stored Cross-Site Scripting (XSS) ID: 7945
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
+1. (Required) Vulnerability: Unauthenticated Stored Cross-Site Scripting (XSS) ID: 7945
+  - [ ] Summary: 4.2 version of Wordpress is vulnerable to a stored XSS attack. An unauthenticated attacker can inject JavaScript code in the Wordpress comments and JS code is executed when comment is viewed by anyone.
+    - Vulnerability types: Stored XSS
+    - Tested in version: 4.2
+    - Fixed in version: 4.2.1
   - [ ] GIF Walkthrough: <img src="xss-wordpress.gif" width="800">
-  - [ ] Steps to recreate: 
+  - [ ] Steps to recreate:
+* Navigate to comment section of Wordpress website.
+* Fill out the Name and Email fields.
+* In the comment field, you should inject JS code similar to this:
+```html <a title='x onmouseover=alert(unescape(/hello%20sher/.source)) style=position:absolute;left:0;top:0;width:5000px;height:5000px  AAAAAAAAAAAA...[64 kb]..AAA'></a>```
+* Make sure your comment length is greater than 64KB so we get SQL truncate our comment and store it in the database.The comment should be greater than 65635(64KB) characters. 
+* View the comments as an admin or a different user and you'll get an alert box. 
+
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
 1. (Required) Vulnerability Name or ID
@@ -23,7 +30,7 @@ Time spent: **X** hours spent in total
   - [ ] GIF Walkthrough: 
   - [ ] Steps to recreate: 
   - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+    - [Link 1](https://core.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&new=32311%40branches%2F4.2&old=32300%40branches%2F4.2)
 1. (Required) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
