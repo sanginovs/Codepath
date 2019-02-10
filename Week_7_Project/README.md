@@ -13,12 +13,12 @@ Time spent: **X** hours spent in total
     - Fixed in version: 4.2.1
   - [ ] GIF Walkthrough: <img src="xss-wordpress.gif" width="800">
   - [ ] Steps to recreate:
-* Navigate to comment section of Wordpress website.
-* Fill out the Name and Email fields.
-* In the comment field, you should inject JS code similar to this:
-```html <a title='x onmouseover=alert(unescape(/hello%20sher/.source)) style=position:absolute;left:0;top:0;width:5000px;height:5000px  AAAAAAAAAAAA...[64 kb]..AAA'></a>```
-* Make sure your comment length is greater than 64KB so we get SQL truncate our comment and store it in the database.The comment should be greater than 65635(64KB) characters. 
-* View the comments as an admin or a different user and you'll get an alert box. 
+	* Navigate to comment section of Wordpress website.
+	* Fill out the Name and Email fields.
+	* In the comment field, you should inject JS code similar to this:
+``` <a title='x onmouseover=alert(unescape(/hello%20sher/.source)) style=position:absolute;left:0;top:0;width:5000px;height:5000px  AAAAAAAAAAAA...[64 kb]..AAA'></a>```
+	* Make sure your comment length is greater than 64KB so we get SQL truncate our comment and store it in the database.The comment should be greater than 65635(64KB) characters. 
+	* View the comments as an admin or a different user and you'll get an alert box. 
 
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
