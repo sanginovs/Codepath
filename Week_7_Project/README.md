@@ -38,7 +38,7 @@ Time spent: **X** hours spent in total
      * As a result, server sends GET request to 0.0.0.0:8080 and servers pricate 127.0.0.1 responds
      * Attacker can also use a public address
   - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&new=32311%40branches%2F4.2&old=32300%40branches%2F4.2)
+    - [Link 1](https://core.trac.wordpress.org/changeset/36435)
 
 1. (Required) Vulnerability Name or ID
   - [ ] Summary: 
