@@ -23,16 +23,23 @@ Time spent: **X** hours spent in total
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&new=32311%40branches%2F4.2&old=32300%40branches%2F4.2)
 
-1. (Required) Vulnerability Name or ID: Server-side Request Forgery (id: 8376)
-  - [ ] Summary: Press This feature in Wordpress allows internal GET Server Side Request Forgery via CSRF because it does not require csrf token for each request since the url does not validate if the user intends to send a scrape request. 
+2. (Required) Vulnerability Name or ID: Server-side Request Forgery (id: 8376)
+  - [ ] Summary: Press This feature in Wordpress allows internal GET Server Side Request Forgery via CSRF because it does not require csrf token for each request since the url does not validate if the user intends to send a scrape request or not. The filter does not validate for **0.0.0.0:PORT** and allows an attacker to make the victim send GET request to servers private 127.0.0.1:PORT, localhost:PORT and anything that can be access via 0.0.0.0 
     - Vulnerability types: CSRF, SSRF
     - Tested in version: 4.2
     - Fixed in version: 4.2.7
   - [ ] GIF Walkthrough: 
-<img src="csrf1.gif" width="800">
-  - [ ] Steps to recreate: 
+        * I logged the user and created the same exact Press This form in my Google Cloud Plaform server. If I get an admin click on my link, he'll make an unwanted Press This request to a url(public or private) specified by an attacker. However, in this gif demonstration, admin user will not be able to make a request if clicked on my Google Cloud server external IP because wordpress is installed locally using Vagrant in my machine so Google Server will not be able to send GET request action to my local wordpress website. 
+        <img src="csrf1.gif" width="800">
+  - [ ] Steps to recreate:
+     *  User should be logged in Wordpress
+     *  Attacker gets user click on a malicious link such as ```<img src="/=https://userWordpress.com/wp-admin/press-this.php?u=http://0.0.0.0:8080&url-scan-submit=Scan"/>
+     *  User sends an unwanted request to its server requesting an internal server address to be hit  
+     * As a result, server sends GET request to 0.0.0.0:8080 and servers pricate 127.0.0.1 responds
+     * Attacker can also use a public address
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&new=32311%40branches%2F4.2&old=32300%40branches%2F4.2)
+
 1. (Required) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
