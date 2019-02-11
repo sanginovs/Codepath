@@ -52,7 +52,7 @@ Time spent: **X** hours spent in total
  
   - [ ] Steps to recreate: 
      * Navigate to yourWorpressUrl.com/wp-admin/post-new.php
-     * Click on Text tab and input: ```<HTML xmlns: > <audio><audio src=a onerror=alert(0X1)>
+     * Click on Text tab and input: ```<HTML xmlns: > <audio><audio src=a onerror=alert(0X1)>```
      * Click on Visual Tab and XSS gets triggered.
 
   - [ ] Affected source code:
