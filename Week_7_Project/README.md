@@ -47,7 +47,8 @@ Time spent: **X** hours spent in total
     - Vulnerability types: XSS
     - Tested in version: 4.2
     - Fixed in version: 4.3.1
-  - [ ] GIF Walkthrough: <img src="xss1.gif" width="800">
+  - [ ] GIF Walkthrough: 
+       <img src="xss1.gif" width="800">
  
   - [ ] Steps to recreate: 
   - [ ] Affected source code:
