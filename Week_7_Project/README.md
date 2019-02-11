@@ -25,13 +25,13 @@ Time spent: **X** hours spent in total
 
 2. (Required) Vulnerability Name or ID: Server-side Request Forgery (id: 8376)
   - [ ] Summary: 
-        * Press This feature in Wordpress allows internal GET Server Side Request Forgery via CSRF because it does not require csrf token for each request since the url does not validate if the user intends to send a scrape request or not. The filter does not validate for **0.0.0.0:PORT** and allows an attacker to make the victim send GET request to server's private 127.0.0.1:PORT, localhost:PORT and anything that can be accessed via 0.0.0.0 
+         Press This feature in Wordpress allows internal GET Server Side Request Forgery via CSRF because it does not require csrf token for each request since the url does not validate if the user intends to send a scrape request or not. The filter does not validate for **0.0.0.0:PORT** and allows an attacker to make the victim send GET request to server's private 127.0.0.1:PORT, localhost:PORT and anything that can be accessed via 0.0.0.0 
 
     - Vulnerability types: CSRF, SSRF
     - Tested in version: 4.2
     - Fixed in version: 4.2.7
   - [ ] GIF Walkthrough: 
-        * I logged the user and created the same exact Press This form in my Google Cloud Plaform server. If I get an admin click on my link, he'll make an unwanted Press This request to a url(public or private) specified by an attacker. However, in this gif demonstration, admin user will not be able to make a request if clicked on my Google Cloud server external IP because wordpress is installed locally using Vagrant in my machine so Google Server will not be able to send GET request action to my local wordpress website. 
+        I logged the user and created the same exact Press This form in my Google Cloud Plaform server. If I get an admin click on my link, he'll make an unwanted Press This request to a url(public or private) specified by an attacker. However, in this gif demonstration, admin user will not be able to make a request if clicked on my Google Cloud server external IP because wordpress is installed locally using Vagrant in my machine so Google Server will not be able to send GET request action to my local wordpress website. 
         <img src="csrf1.gif" width="800">
   - [ ] Steps to recreate:
      *  User should be logged in Wordpress
@@ -42,12 +42,13 @@ Time spent: **X** hours spent in total
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/changeset/36435)
 
-1. (Required) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
+3. (Required) Vulnerability Name or ID: XSS Vulnerability
+  - [ ] Summary: When adding a new post, Wordpress allows you to input text in Text input and by clicking on the Visual Tab, one can view it. However, Visual tab is vulnerable to XSS, injected through the Text input.
+    - Vulnerability types: XSS
+    - Tested in version: 4.2
+    - Fixed in version: 4.3.1
+  - [ ] GIF Walkthrough: <img src="xss1.gif" width="800">
+ 
   - [ ] Steps to recreate: 
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
