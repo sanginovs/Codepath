@@ -82,6 +82,7 @@ List any additional assets, such as scripts or files
 - [WordPress Developer Reference](https://developer.wordpress.org/reference/)
 - [HackerOne](https://www.hackerone.com)
 - [WPScan Vulnerability Database](https://wpvulndb.com)
+
 GIFs created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
