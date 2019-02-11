@@ -26,6 +26,7 @@ Time spent: **X** hours spent in total
 2. (Required) Vulnerability Name or ID: Server-side Request Forgery (id: 8376)
   - [ ] Summary: 
         * Press This feature in Wordpress allows internal GET Server Side Request Forgery via CSRF because it does not require csrf token for each request since the url does not validate if the user intends to send a scrape request or not. The filter does not validate for **0.0.0.0:PORT** and allows an attacker to make the victim send GET request to server's private 127.0.0.1:PORT, localhost:PORT and anything that can be accessed via 0.0.0.0 
+
     - Vulnerability types: CSRF, SSRF
     - Tested in version: 4.2
     - Fixed in version: 4.2.7
