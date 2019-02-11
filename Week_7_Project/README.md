@@ -51,26 +51,26 @@ Time spent: **X** hours spent in total
        <img src="xss1.gif" width="800">
  
   - [ ] Steps to recreate: 
+     * Navigate to yourWorpressUrl.com/wp-admin/post-new.php
+     * Click on Text tab and input: ```<HTML xmlns: > <audio><audio src=a onerror=alert(0X1)>
+     * Click on Visual Tab and XSS gets triggered.
+
+  - [ ] Affected source code:
+    - [Link 1](https://core.trac.wordpress.org/browser/branches/4.3/src/wp-admin/post-new.php?rev=34199)
+
+4. (Optional) Vulnerability Name or ID: Stored XSS
+  - [ ] Summary: Admin's User tables page was vulnerable to XSS attack. Non-admin user could insert malicious XSS as their email and it gets triggered when admin views list of users with their emails.The proof of concept was missing and I had try different XSS combinations but I did not succeed.
+    - Vulnerability types: XSS
+    - Tested in version: 4.2
+    - Fixed in version: 4.2.1
+  - [ ] GIF Walkthrough: 
+      <img src="storedXss.gif" width="800">
+  - [ ] Steps to recreate: 
+     * Log in as a normal user and go to your profile
+     * Change your email to malicious XSS code. Your email is directly put in ```href="mailto:useremail"``` without sanitizing.
+     * Once the admin views the list of users, XSS gets triggered.
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
-1. (Optional) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
-1. (Optional) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php) 
 
 ## Assets
 
@@ -80,16 +80,20 @@ List any additional assets, such as scripts or files
 
 - [WordPress Source Browser](https://core.trac.wordpress.org/browser/)
 - [WordPress Developer Reference](https://developer.wordpress.org/reference/)
-
+- [HackerOne](https://www.hackerone.com)
+- [WPScan Vulnerability Database](https://wpvulndb.com)
 GIFs created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while doing the work
+Describe any challenges encountered while doing the work:
+
+I really enjoyed working on this assignment. One of the challenging parts of this assignment was to able to reproduce some of the security vulnerabilities in the Wordpress website.
+This is because the security vulnerabilities were briefly documented however the proof of concept was missing. 
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2019] [Sher Sanginov]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
