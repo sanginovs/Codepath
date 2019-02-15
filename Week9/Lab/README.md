@@ -1,9 +1,18 @@
 ## Network Config
 
-* Run ifconfig/ipconfig/ip and determine the name/id of your primary network interface
-* What is your primary interface's IP address? Is it different from your public IP? Why or why not?
-* What is the MAC address of your primary interface?
-* Identify and understand your loopback interface
+## Mac: ifconfig (Linux: IP)
+
+* Facts
+ * List information about available network interfaces (NICs)
+ * Can start/stop individual interfaces
+ * ifconfig can change an interface's MAC address
+
+* Challenges
+ * Run ifconfig/ipconfig/ip and determine the name/id of your primary network interface
+ * What is your primary interface's IP address? Is it different from your public IP? Why or why not?
+ * What is the MAC address of your primary interface?
+ * Identify and understand your loopback interface
+
 
 
 ## Ping
