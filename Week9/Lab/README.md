@@ -45,8 +45,11 @@
 
 * Challenges
   * What is the IP address of codepath.com?
+      * The IP address if **codepath.com** is 198.58.125.217.
   * What is the IP address of google.com?
-  * Why would the IP address of google.com change between runs or from different locations?*
+      * When I ping, it shows 64.233.185.100 but it changes.
+  * Why would the IP address of google.com change between runs or from different locations?
+      * Since Google is highly available, it has multiple instances of its same application running on thousands of machines. Thus, it makes these servers available for a large number of simultaneous requests. So, when my browser made a DNS request for getting its IP, it didn't receive a single IP but received many IP addresses that can serve the same website. Then, my browser chose one.  
 
 ## nslookup
 
