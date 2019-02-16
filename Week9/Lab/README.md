@@ -93,3 +93,22 @@
       * Telnet(Telecommunication Network)client is used to connect to device remotely over the network. All of the communication between your workstation and that telnet service is unencrypted including your username and password used to log onto that remote device.
   * Can you telnet to codepath.com? What port is open and why?
       * I tried telnetting codepath but wasn't able to find a port that allows telnet connection.
+
+
+# Core Tools
+
+  * The following are very widely used by engineers of all stripes and will be invaluable over the course of a career. If you don't know them, you need to. If you're going to spend extra time with any of the tools in this milestone, these are the ones to know.
+
+## curl and wget
+
+* Facts
+    * Both can download contents from FTP, HTTP and HTTPS
+    * Both can send HTTP POST requests and use HTTP cookies
+    * Both are scriptable
+
+* Challenges
+    * Identify some differences between the two
+    * Which would you be more likely to use for interacting with a RESTful API from the command line?
+    * Which support recursive downloading?
+    * Which are you more likely to find pre-installed on a Linux OS?
+    * What is the syntax for each for downloading a file to the current directory?
