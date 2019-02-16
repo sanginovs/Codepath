@@ -27,11 +27,12 @@
      * If the node from this network makes a request to a server outside of this network, my router assigns a public IP address to this node and makes a request using a node's public IP. To translate a public IP back to private or vica versa, the router uses Network address translation (NAT). As a result, a private IP address is used only inside local network and my router. That is why I can't see my public IP using **ifconfig** since my router is the one that assigns a public IP to it.
 
   * What is the MAC address of your primary interface?
-     * My en1 MAC address fron the **ifconfig** output is **ether xy:xy:xy:xy:xy:xy**. A media access control address (MAC) of a device is a unique identifier for a network interface. It tell who you are while IP address tells where you are. MAC addresses are Layer-2 addresses used to deliver layer-2 frames on a LAN while IP addresses are layer-3 addresses looked at by layer-3 devices such as a router. there are many protocols in Layer 2 some of which make use of MAC addresses. MAC addresses allows us to do several things:
+     * My en1 MAC address from the **ifconfig** output is **ether xy:xy:xy:xy:xy:xy**. A media access control address (MAC) of a device is a unique identifier for a network interface. It tells who you are while IP address tells where you are. MAC addresses are Layer-2 addresses used to deliver layer-2 frames on a LAN while IP addresses are layer-3 addresses looked at by layer-3 devices such as a router. there are many protocols in Layer 2 some of which make use of MAC addresses. MAC addresses allows us to do several things:
         * Identify manufacturer of an item
         * They provide an unchanging identification of an item
         * Allows for less hardware intensive packets transfer in LAN.
   * Identify and understand your loopback interface
+     * virtual, logical interface. 127.0.0.1 is a commonly used loopback ip address. It is a set of ip addresses reserved by IEEE that starts from 127.0.0.1 all the way to 127.0.0.8. It is used to faciliate a client and server communication which are running on the same computer. By using loopback address, a client and server do not need to know the exact IP address of one another. So, they can communicate using generic IP 127.0.0.1. This is super useful especially when you are developing on your local machine and you don't need to setup a server and host your application to test it. **Localhost** is a local server that allows you to host your web app there on a local IP that is visible only to one's system by connecting to another host computer or web server like Apache.
 
 
 
