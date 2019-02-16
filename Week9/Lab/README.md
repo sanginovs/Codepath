@@ -9,6 +9,16 @@
 
 * Challenges
   * Run ifconfig/ipconfig/ip and determine the name/id of your primary network interface
+     * After running **ifconfig**, I discovered that there's several network interfaces on my Mac. Some of them are physical network interfaces while others are logical:
+         * lo0: loopback interface. localhost 127.0.0.1
+         * en0: physical network interface: ethernet
+         * en1: physical network interface for WIFI
+         * p2p0: virtual interface for Airdrop Mac-specific
+         * fw0: FireWire network interface
+         * utun0: for VPN MacOS Sierra or later
+         * gif0: tunnel interface, used to tunnel IPv4 traffic to Ipv6 network and back
+         * stf0: is an IPv6 to IPv4 tunnel interface, basically a bridge connection to transition IPv4 to Ipv6:  http://en.wikipedia.org/wiki/6to4
+
   * What is your primary interface's IP address? Is it different from your public IP? Why or why not?
   * What is the MAC address of your primary interface?
   * Identify and understand your loopback interface
@@ -25,7 +35,7 @@
 * Challenges
   * What is the IP address of codepath.com?
   * What is the IP address of google.com?
-  * Why would the IP address of google.com change between runs or from different locations?* 
+  * Why would the IP address of google.com change between runs or from different locations?*
 
 ## nslookup
 
@@ -39,7 +49,7 @@
   * Does the domain returned from nslookup match? If not, why not?
 
 ## traceroute
-  
+
   * Facts
   * Determine the path to a specific destination
   * Each step in the path is called a hop
@@ -59,5 +69,3 @@
 * Challenges
   * What's one thing that makes telnet insecure?
   * Can you telnet to codepath.com? What port is open and why?
-
-
