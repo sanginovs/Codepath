@@ -20,6 +20,12 @@
          * stf0: is an IPv6 to IPv4 tunnel interface, basically a bridge connection to transition IPv4 to Ipv6:  http://en.wikipedia.org/wiki/6to4
 
   * What is your primary interface's IP address? Is it different from your public IP? Why or why not?
+     * On en0, it shows that my primary ip **inet** is 10.8.80.XYZ. Since I am connected to ethernet, my MAC is assigned a private IP address. A private IP address is assigned to every node connected to a local network. The organizations that distribute IP addresses to the world reserved a range of IP addresses for private networks. They are:
+        * 192.168.0.0 - 192.168.255.255 (65536 IP addresses)
+        * 172.16.0.0 - 172.31.255.255 (1,048,576)
+        * 10.0.0.0 - 10.255.255.255 (16,777,216)
+     * If the node from this network makes a request to a server outside of this network, your router assigns a public IP address to this node and makes a request using a node's public IP. To translate a public IP back to private or vica versa, the router uses Network address translation (NAT). As a result, a private IP address is used only inside local network and your router.
+
   * What is the MAC address of your primary interface?
   * Identify and understand your loopback interface
 
