@@ -90,4 +90,6 @@
   * Still useful to determine if a port is open
 * Challenges
   * What's one thing that makes telnet insecure?
+      * Telnet(Telecommunication Network)client is used to connect to device remotely over the network. All of the communication between your workstation and that telnet service is unencrypted including your username and password used to log onto that remote device.
   * Can you telnet to codepath.com? What port is open and why?
+      * I tried telnetting codepath but wasn't able to find a port that allows telnet connection.
