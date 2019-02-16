@@ -76,11 +76,11 @@
 
   * Challenges
       * Compare the traceroutes for codepath.com and google.com
-      **traceroute codepath.com** made 12 hops while **traceroute google.com** made 25 hops. The first 11 hops in the terminal outputs are the same. This is because, the hops are going through my network to my ISP. Hops from my network to my ISP are the same. Then, my ISP will hop to google's server which is different from codepath.
+          * **traceroute codepath.com** made 12 hops while **traceroute google.com** made 25 hops. The first 11 hops in the terminal outputs are the same. This is because, the hops are going through my network to my ISP. Hops from my network to my ISP are the same. Then, my ISP will hop to google's server which is different from codepath.
       * How many of the hops are the same? What accounts for this?
-      11 hops are the same because it is hopping from my network all the way to my Internet Service Provider.
+          * 11 hops are the same because it is hopping from my network all the way to my Internet Service Provider.
       * Which has more hops? What accounts for the difference?
-      Google has more hops because it has multiple addresses running the same instance of an application and my request needs to go through load balancers. 
+          * Google has more hops because it has multiple addresses running the same instance of an application and my request needs to go through load balancers.
 
 ## telnet
 * Facts
