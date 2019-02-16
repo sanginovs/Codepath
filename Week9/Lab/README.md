@@ -70,14 +70,14 @@
 ## traceroute
 
   * Facts
-  * Determine the path to a specific destination
-  * Each step in the path is called a hop
-  * Determine the latency at each hop
+      * Determine the path to a specific destination
+      * Each step in the path is called a hop
+      * Determine the latency at each hop
 
-* Challenges
-  * Compare the traceroutes for codepath.com and google.com
-  * How many of the hops are the same? What accounts for this?
-  * Which has more hops? What accounts for the difference?
+  * Challenges
+      * Compare the traceroutes for codepath.com and google.com
+      * How many of the hops are the same? What accounts for this?
+      * Which has more hops? What accounts for the difference?
 
 ## telnet
 * Facts
