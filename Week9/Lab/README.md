@@ -61,6 +61,11 @@
 * Challenges
   * Using the IP for codepath.com from the previous, pass it to nslookup
   * Does the domain returned from nslookup match? If not, why not?
+      * The returned output is: <br>
+      Non-authoritative answer:
+          * 217.125.58.198.in-addr.arpa  
+          * **name = thecodepath.com**
+  and it does not match the result which was returned from **ping codepath.com**. Instead, it gives us the ip address of DNS server that is responsible for ip address we looked up. Tutorial Video: https://www.youtube.com/watch?v=jf-x76XYY2o
 
 ## traceroute
 
