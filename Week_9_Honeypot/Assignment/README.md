@@ -16,7 +16,7 @@
 	* Attacks: 2245 days
         * Duration live: 3 days
         * Protocols: pcap, smbd, SipCall, SipSession, ftpd, httpd, mysqldb
-         ![attacks](https://github.com/sanginovs/Codepath/blob/master/Week9/Assignment/attacks.png)
+         ![attacks](https://github.com/sanginovs/Codepath/blob/master/Week_9_Honeypot/Assignment/attacks.png)
    * mhn-honeypot-2 (Dionea with HTTP)
         * Attacks: 0 (Issue)
         * Duration live: 1 hour
