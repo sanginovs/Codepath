@@ -26,4 +26,4 @@
        * Question: Why did it not collect malware?   
   
    * Json export of the data collected:
-      * File [session.json](Assignment/session.json)  is located inside this Github repo
+      * File [session.json](session.json)  is located inside this Github repo
