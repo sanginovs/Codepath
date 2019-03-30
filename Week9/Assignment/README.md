@@ -12,7 +12,14 @@
 
 * A Summary of the data collected: number of attacks, number of malware samples, etc.
    * mhn-honeypot-1 (Dionea)
-	* Attacks: 2245
+	* Attacks: 2 days
         * Duration live: 12 hours
         * Protocols: pcap, smbd, SipCall, SipSession, ftpd, httpd, mysqldb
-   
+   * mhn-honeypot-2 (Dionea with HTTP)
+        * Attacks: 0 (Issue)
+        * Duration live: 1 hour
+   * mhn-honeypot-3 (Wordpot)
+       * Attacks: 0
+   * Any unresolved questions raised by the data collected: 
+       * Question: Why did it not collect malware?   
+  
