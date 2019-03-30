@@ -4,7 +4,7 @@
   * Dionea
   * Dionea with HTTP
   * wordpot
-  ![deployed](https://raw.githubusercontent.com/sanginovs/Codepath/master/Week9/Assignment/honeypots.png)
+  ![deployed](https://raw.githubusercontent.com/sanginovs/Codepath/master/Week_9_Honeypot/Assignment/honeypots.png)
    
 * Any Issues you encountered
   * At the beginning, I was unable to access MHN-admin using its public IP on Google Cloud. Then, I figured that i was using HTTPS to access the mhn-admin. I had to use http because https was not configured on Google cloud server. So, I had to speccify http protocol in the url.
