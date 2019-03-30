@@ -4,7 +4,8 @@
   * Dionea
   * Dionea with HTTP
   * wordpot
-
+  ![deployed](https://raw.githubusercontent.com/sanginovs/Codepath/master/Week9/Assignment/honeypots.png)
+   
 * Any Issues you encountered
   * At the beginning, I was unable to access MHN-admin using its public IP on Google Cloud. Then, I figured that i was using HTTPS to access the mhn-admin. I had to use http because https was not configured on Google cloud server. So, I had to speccify http protocol in the url.
   * Another issue I ran is that MHN-admin did not capture any attacks from my second and third honeypot.
@@ -22,4 +23,4 @@
        * Attacks: 0
    * Any unresolved questions raised by the data collected: 
        * Question: Why did it not collect malware?   
-  
+   ![attacks](https://github.com/sanginovs/Codepath/blob/master/Week9/Assignment/attacks.png)
